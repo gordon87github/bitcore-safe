@@ -1,0 +1,30 @@
+{
+  "name": "bitcore-safe",
+  "main": "./bitcore.min.js",
+  "version": "0.13.5",
+  "homepage": "http://bitcore.io",
+  "authors": [
+    "BitPay, Inc."
+  ],
+  "description": "A pure, powerful core for your safe project.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "safe",
+    "bitcore",
+    "dsh",
+    "satoshi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "CONTRIBUTING.md",
+    "gulpfile.js",
+    "lib",
+    "index.js",
+    "karma.conf.js",
+    "npm-shrinkwrap.json",
+    "test"
+  ]
+}

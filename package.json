@@ -1,0 +1,128 @@
+{
+  "name": "bitcore-safe",
+  "version": "7.2.0",
+  "description": "A platform to build Safe and blockchain-based applications.",
+  "author": {
+    "name": "Safe Core Group",
+    "email": "dev@safe.org"
+  },
+  "main": "index.js",
+  "bin": {
+    "bitcore": "./bin/bitcore",
+    "bitcored": "./bin/bitcored"
+  },
+  "contributors": [
+    {
+      "name": "Daniel Cousens",
+      "email": "bitcoin@dcousens.com"
+    },
+    {
+      "name": "Esteban Ordano",
+      "email": "eordano@gmail.com"
+    },
+    {
+      "name": "Gordon Hall",
+      "email": "gordon@bitpay.com"
+    },
+    {
+      "name": "Jeff Garzik",
+      "email": "jgarzik@bitpay.com"
+    },
+    {
+      "name": "Kyle Drake",
+      "email": "kyle@kyledrake.net"
+    },
+    {
+      "name": "Manuel Araoz",
+      "email": "manuelaraoz@gmail.com"
+    },
+    {
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
+    },
+    {
+      "name": "Ryan X. Charles",
+      "email": "ryanxcharles@gmail.com"
+    },
+    {
+      "name": "Stefan Thomas",
+      "email": "moon@justmoon.net"
+    },
+    {
+      "name": "Stephen Pair",
+      "email": "stephen@bitpay.com"
+    },
+    {
+      "name": "Wei Lu",
+      "email": "luwei.here@gmail.com"
+    }
+  ],
+  "keywords": [
+    "safe",
+    "transaction",
+    "address",
+    "p2p",
+    "ecies",
+    "cryptocurrency",
+    "blockchain",
+    "payment",
+    "bip21",
+    "bip32",
+    "bip37",
+    "bip69",
+    "bip70",
+    "multisig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safeevo/bitcore-safe.git"
+  },
+  "browser": {
+    "request": "browser-request"
+  },
+  "dependencies": {
+    "bitcore-lib-safe": "^4.1.0",
+    "bitcore-node-safe": "^4.2.2",
+    "insight-api-safe": "^4.1.0",
+    "insight-ui-safe": "^4.1.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  },
+  "gitHead": "f7f2d3f6bf3ffc5d59781a17d836376e4f9e93ed",
+  "bugs": {
+    "url": "https://github.com/safeevo/bitcore-safe/issues"
+  },
+  "homepage": "https://github.com/safeevo/bitcore-safe#readme",
+  "_id": "bitcore-safe@7.2.0",
+  "_npmVersion": "5.5.1",
+  "_nodeVersion": "8.9.3",
+  "_npmUser": {
+    "name": "allwhitetofly",
+    "email": "1010412158@qq.com"
+  },
+  "dist": {
+    "integrity": "sha512-Q8SROdugAqWinSfWhktUA91rdHFABAf0rzPQTSGhBM0UGbdYXoZpNFWfMHQZVKe0WlB+ftmqEJfL7aSQ18u3tg==",
+    "shasum": "4af92fb32dfbc4206f5e2112443b7c189638ebe1",
+    "tarball": "https://registry.npmjs.org/bitcore-safe/-/bitcore-safe-7.2.0.tgz",
+    "fileCount": 14,
+    "unpackedSize": 26007,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbH3SWCRA9TVsSAnZWagAAYtoP/2hTDLxpm8+rvCq7m1EO\n2T6iMn4oi8DBVYjJZBHqxDUeVjAADf68MFU6uaCUKdryByEOtkpAJHhEt7NJ\nQpMS16Qjcr7Kk8Ogfs+oE1+fWHe/9dInMbHVPjNOI+eGoa/Aj4n+q97PyDb7\nvgYaDlvHFsPbl8SI/DgI+uYEjuuhQMml1SeA4p/ZeJh4fvYCpkP8IV8f3wNS\nm/luL2USIhMqFWa109hD+1tD0vbVJUI1EZ79uheWGx6F+tEEewrv/d2q+xT3\nlPn0A6zFcbjljasHTwn8kg/Newgm13aAmu86oLeCw5z+z1Os9qZAzxqLnXhR\n+9Qfhh2Uc8detPQY2jOZ11lG5dDX6R1gMxEjRkPJnc/B/Y93Z4zuC/Pl2SFv\ny+qniuzdlpZKPjwBtc/PpaXiUSzPZyFpYws6H8AoYhh+PlHZ9gg8FQ1UhKg3\n4NWWiBIuq1TavaDO+LdqmNRqxQByCDsCXF3IEGacLmqXafFapstGkj1ny4gN\ntHQswu9MQNUDy1bpE4M6hcYt3jVxrBM/D99Y83znEVC/u7WBMSZRXvhufeyx\nI3buXI2gieM8+cRF7M1wc/gCjPuD9VRTGJQfxZ6epQUAGITKNjAKP4qKD6fj\nGSmHqKDudh0oGQWcbtUe7qKvz4sk47H0vMaSQewMgr7bfSBse/3TPc17pz7M\nlVVT\r\n=8ONr\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "maintainers": [
+    {
+      "name": "allwhitetofly",
+      "email": "1010412158@qq.com"
+    }
+  ],
+  "directories": {},
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bitcore-safe_7.2.0_1528788118306_0.8071073954847656"
+  },
+  "_shasum": "e7a7dedddf3e0eb8801179eeacdf21d141539bde",
+  "_resolved": "https://registry.npmjs.org/bitcore-safe/-/bitcore-safe-7.2.0.tgz",
+  "_from": "bitcore-safe@latest"
+}
