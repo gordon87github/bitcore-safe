@@ -1,79 +1,67 @@
-# Bitcore-Safe
+Bitcore Node Safe
+============
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-safe.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-safe)
-[![Build Status](https://img.shields.io/travis/safeevo/bitcore-safe.svg?branch=master&style=flat-square)](https://travis-ci.org/safeevo/bitcore-safe)
+A Safe full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Safe Core v0.12.1.x](https://github.com/safepay/safe/tree/v0.12.1.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
-Infrastructure to build Safe and blockchain-based applications for the next generation of financial technology.
-
-**Note:** If you're looking for the Bitcore-Safe Library please see: https://github.com/safeevo/bitcore-lib-safe
-
-## Getting Started
-
-Before you begin you'll need to have Node.js v4+ installed. There are several options for installation. One method is to use [nvm](https://github.com/creationix/nvm) to easily switch between different versions, or download directly from [Node.js](https://nodejs.org/).
+## Install
 
 ```bash
-npm install -g bitcore-safe
+npm install -g bitcore-node-safe
 ```
 
-Spin up a full node and join the network:
+## Prerequisites
+
+- Safe Core (v0.12.1.x) with support for additional indexing *(see above)*
+- Node.js v0.10, v0.12, v4 or v5
+- ZeroMQ *(libzmq3-dev for Ubuntu/Debian or zeromq on OSX)*
+- ~20GB of disk storage
+- ~1GB of RAM
+
+## Configuration
+
+Bitcore includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
 
 ```bash
-npm install -g bitcore-safe
-bitcored
+bitcore-node-safe create -d <safe-data-dir> mynode
+cd mynode
+bitcore-node-safe install <service>
+bitcore-node-safe install https://github.com/yourname/helloworld
+bitcore-node-safe start
 ```
 
-You can then view the Insight block explorer at the default location: `http://localhost:3001/insight`, and your configuration file will be found in your home directory at `~/.bitcore`.
+This will create a directory with configuration files for your node and install the necessary dependencies.
 
-Create a transaction:
-```js
-var bitcore = require('bitcore-safe');
-var transaction = new bitcore.Transaction();
-var transaction.from(unspent).to(address, amount);
-transaction.sign(privateKey);
-```
+Please note that [Safe Core v0.12.1.x](https://github.com/safepay/safe/tree/v0.12.1.x) will be downloaded automatically. Once completed the safed binary should be placed into the &lt;safe-data-dir&gt; folder specified during node creation.
 
-## Applications
+For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
 
-- [Node-Safe](https://github.com/safeevo/bitcore-node-safe) - A full node with extended capabilities using Safe Core
-- [Insight API-Safe](https://github.com/safeevo/insight-api-safe) - A blockchain explorer HTTP API
-- [Insight UI-Safe](https://github.com/safeevo/insight-ui-safe) - A blockchain explorer web user interface
-- [Wallet Service](https://github.com/safeevo/bitcore-wallet-service-safe) - A multisig HD service for wallets
-- [Wallet Client](https://github.com/safeevo/bitcore-wallet-client-safe) - A client for the wallet service
-- CLI Wallet - A command-line based wallet client
-- Angular Wallet Client - An Angular based wallet client
-- Copay - An easy-to-use, multiplatform, multisignature, secure Safe wallet
+## Add-on Services
 
-## Libraries
+There are several add-on services available to extend the functionality of Bitcore:
 
-- [Lib-Safe](https://github.com/safeevo/bitcore-lib-safe) - All of the core Safe primatives including transactions, private key management and others
-- Payment Protocol - A protocol for communication between a merchant and customer
-- [P2P-Safe](https://github.com/safeevo/bitcore-p2p-safe) - The peer-to-peer networking protocol
-- [Mnemonic-Safe](https://github.com/safeevo/bitcore-mnemonic-safe) - Implements mnemonic code for generating deterministic keys
-- Channel - Micropayment channels for rapidly adjusting Safe transactions
-- [Message-Safe](https://github.com/safeevo/bitcore-message-safe) - Safe message verification and signing
-- [ECIES-Safe](https://github.com/safeevo/bitcore-ecies-safe) - Uses ECIES symmetric key negotiation from public keys to encrypt arbitrarily long data streams.
+- [Insight API](https://github.com/safepay/insight-api-safe/tree/master)
+- [Insight UI](https://github.com/safepay/insight-ui-safe/tree/master)
+- [Bitcore Wallet Service](https://github.com/safepay/bitcore-wallet-service/tree/master)
 
 ## Documentation
 
-The complete docs are hosted here: [bitcore documentation](http://bitcore.io/guide/). There's also a [bitcore API reference](http://bitcore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each bitcore utility.
-
-- [Read the Developer Guide](http://bitcore.io/guide/)
-- [Read the API Reference](http://bitcore.io/api/)
-
-To get community assistance and ask for help with implementation questions, please use our [community forums](http://bitpaylabs.com/c/bitcore).
-
-## Security
-
-We're using Bitcore in production, as are [many others](http://bitcore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
-
-If you find a security issue, please email security@bitpay.com.
+- [Upgrade Notes](docs/upgrade.md)
+- [Services](docs/services.md)
+  - [Bitcoind](docs/services/bitcoind.md) - Interface to Bitcoin Core
+  - [Web](docs/services/web.md) - Creates an express application over which services can expose their web/API content
+- [Development Environment](docs/development.md) - Guide for setting up a development environment
+- [Node](docs/node.md) - Details on the node constructor
+- [Bus](docs/bus.md) - Overview of the event bus constructor
+- [Release Process](docs/release.md) - Information about verifying a release and the release process.
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/safeevo/bitcore-safe/blob/master/CONTRIBUTING.md) file.
-
-This will generate files named `bitcore.js` and `bitcore.min.js`.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/bitpay/bitcore/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
-Released under the MIT license, under the same terms as SafeCore itself. See [LICENSE](LICENSE) for more info.
+Code released under [the MIT license](https://github.com/bitpay/bitcore-node-safe/blob/master/LICENSE).
+
+Copyright 2013-2015 BitPay, Inc.
+
+- bitcoin: Copyright (c) 2009-2015 Bitcoin Core Developers (MIT License)
