@@ -60,8 +60,8 @@ installation
 - Do not exceed version 4.9
 
 ## npm
-sudo apt-get update
-npm install npm
+- sudo apt-get update
+- npm install npm
 
 ## libzmq
 git clone https://github.com/zeromq/libzmq
