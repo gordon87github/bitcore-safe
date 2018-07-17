@@ -56,7 +56,7 @@ installation
 - wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 - download nodejs version controller
 - nvm install 4.6.1
-- Best version  v4.6.1
+- Best version  4.6.1
 - Do not exceed version 4.9
 
 ## npm
