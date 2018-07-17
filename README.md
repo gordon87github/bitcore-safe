@@ -11,7 +11,7 @@ npm install -g bitcore-node-safe
 
 ## Prerequisites
 
-- Safe Core (v0.12.1.x) with support for additional indexing *(see above)*
+- Safe Core (v7.2.x) with support for additional indexing *(see above)*
 - Node.js v0.10, v0.12, v4 or v5
 - ZeroMQ *(libzmq3-dev for Ubuntu/Debian or zeromq on OSX)*
 - ~20GB of disk storage
