@@ -73,10 +73,10 @@ rely on：
 - sudo apt-get install pkg-config
 
 Execute a command 
-- 1) ./autogen.sh && ./configure && make -j 4
-- 2) npm config set unsafe-perm true
-- 3) sudo make check && make install && sudo ldconfig
-- 4) npm install -g zmq
+1) ./autogen.sh && ./configure && make -j 4
+2) npm config set unsafe-perm true
+3) sudo make check && make install && sudo ldconfig
+4) npm install -g zmq
 
 ## Node program
 
