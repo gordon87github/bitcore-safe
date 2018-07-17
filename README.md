@@ -31,7 +31,7 @@ bitcore-node-safe start
 
 This will create a directory with configuration files for your node and install the necessary dependencies.
 
-Please note that [Safe Core v0.12.1.x](https://github.com/safepay/safe/tree/v0.12.1.x) will be downloaded automatically. Once completed the safed binary should be placed into the &lt;safe-data-dir&gt; folder specified during node creation.
+Please note that [Safe Core v7.2.x](https://github.com/gordon87github/bitcore-safe)  will be downloaded automatically. Once completed the safed binary should be placed into the &lt;safe-data-dir&gt; folder specified during node creation.
 
 For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
 
@@ -39,20 +39,10 @@ For more information about (and developing) services, please see the [Service Do
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/safepay/insight-api-safe/tree/master)
-- [Insight UI](https://github.com/safepay/insight-ui-safe/tree/master)
-- [Bitcore Wallet Service](https://github.com/safepay/bitcore-wallet-service/tree/master)
-
-## Documentation
-
-- [Upgrade Notes](docs/upgrade.md)
-- [Services](docs/services.md)
-  - [Bitcoind](docs/services/bitcoind.md) - Interface to Bitcoin Core
-  - [Web](docs/services/web.md) - Creates an express application over which services can expose their web/API content
-- [Development Environment](docs/development.md) - Guide for setting up a development environment
-- [Node](docs/node.md) - Details on the node constructor
-- [Bus](docs/bus.md) - Overview of the event bus constructor
-- [Release Process](docs/release.md) - Information about verifying a release and the release process.
+- [Insight API]  npm install bitcore-api-safe
+- [Insight UI]   npm install bitcore-ui-safe
+- [Insight Service]npm install bitcore-node-safe
+- [Insight lib]npm install bitcore-lib-safe
 
 ## Contributing
 
