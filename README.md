@@ -1,7 +1,7 @@
 Bitcore Node Safe
 ============
 
-A Safe full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Safe Core v0.12.1.x](https://github.com/safepay/safe/tree/v0.12.1.x) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
+A Safe full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Safe Core v7.2.x](https://github.com/gordon87github/bitcore-safe) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
 ## Install
 
@@ -58,10 +58,40 @@ There are several add-on services available to extend the functionality of Bitco
 
 Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/bitpay/bitcore/blob/master/CONTRIBUTING.md) file.
 
-## License
+installation
+============
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore-node-safe/blob/master/LICENSE).
+## nodejs
 
-Copyright 2013-2015 BitPay, Inc.
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+download nodejs version controller
+nvm install 4.6.1
+Best version  v4.6.1
+Do not exceed version 4.9
 
-- bitcoin: Copyright (c) 2009-2015 Bitcoin Core Developers (MIT License)
+## npm
+sudo apt-get update
+npm install npm
+
+## libzmq
+git clone https://github.com/zeromq/libzmq
+
+
+rely on：
+sudo apt-get install libtool
+sudo apt-get install autoconf
+sudo apt-get install pkg-config
+
+Execute a command 
+1) ./autogen.sh && ./configure && make -j 4
+2) npm config set unsafe-perm true
+3) sudo make check && make install && sudo ldconfig
+4) npm install -g zmq
+
+## Node program
+
+sudo apt-get install libboost-all-dev
+sudo apt-get install libdb++-dev
+sudo apt-get install libminiupnpc-dev
+sudo apt-get install libevent-dev
+
