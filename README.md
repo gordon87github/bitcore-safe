@@ -63,11 +63,11 @@ installation
 
 ## nodejs
 
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-download nodejs version controller
-nvm install 4.6.1
-Best version  v4.6.1
-Do not exceed version 4.9
+- wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+- download nodejs version controller
+- nvm install 4.6.1
+- Best version  v4.6.1
+- Do not exceed version 4.9
 
 ## npm
 sudo apt-get update
@@ -78,20 +78,20 @@ git clone https://github.com/zeromq/libzmq
 
 
 rely on：
-sudo apt-get install libtool
-sudo apt-get install autoconf
-sudo apt-get install pkg-config
+- sudo apt-get install libtool
+- sudo apt-get install autoconf
+- sudo apt-get install pkg-config
 
 Execute a command 
-1) ./autogen.sh && ./configure && make -j 4
-2) npm config set unsafe-perm true
-3) sudo make check && make install && sudo ldconfig
-4) npm install -g zmq
+- 1) ./autogen.sh && ./configure && make -j 4
+- 2) npm config set unsafe-perm true
+- 3) sudo make check && make install && sudo ldconfig
+- 4) npm install -g zmq
 
 ## Node program
 
-sudo apt-get install libboost-all-dev
-sudo apt-get install libdb++-dev
-sudo apt-get install libminiupnpc-dev
-sudo apt-get install libevent-dev
+- sudo apt-get install libboost-all-dev
+- sudo apt-get install libdb++-dev
+- sudo apt-get install libminiupnpc-dev
+- sudo apt-get install libevent-dev
 
